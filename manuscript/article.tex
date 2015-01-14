@@ -1,0 +1,120 @@
+\documentclass[preprint]{elsarticle} %review
+
+\usepackage{lineno,hyperref}
+\modulolinenumbers[5]
+\usepackage{graphics}
+\graphicspath{{.}{images/}}
+\journal{Signal Processing: Image Communication}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Elsevier bibliography styles
+%%%%%%%%%%%%%%%%%%%%%%%
+%% To change the style, put a % in front of the second line of the current style and
+%% remove the % from the second line of the style you would like to use.
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Numbered
+%\bibliographystyle{model1-num-names}
+
+%% Numbered without titles
+%\bibliographystyle{model1a-num-names}
+
+%% Harvard
+%\bibliographystyle{model2-names.bst}\biboptions{authoryear}
+
+%% Vancouver numbered
+%\usepackage{numcompress}\bibliographystyle{model3-num-names}
+
+%% Vancouver name/year
+%\usepackage{numcompress}\bibliographystyle{model4-names}\biboptions{authoryear}
+
+%% APA style
+%\bibliographystyle{model5-names}\biboptions{authoryear}
+
+%% AMA style
+%\usepackage{numcompress}\bibliographystyle{model6-num-names}
+
+%% `Elsevier LaTeX' style
+\bibliographystyle{elsarticle-num}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Low Power Mid-crack Code for High Performance Image Transmission}
+%\tnotetext[mytitlenote]{Fully documented templates are available in the elsarticle package on \href{http://www.ctan.org/tex-archive/macros/latex/contrib/elsarticle}{CTAN}.}
+
+%% Group authors per affiliation:
+\author[uk]{Sohag Kabir\corref{mycorrespondingauthor}}
+\ead{s.kabir@2012.hull.ac.uk}
+
+\author[nz]{A S M Ashraful Alam}
+\ead{aalam@cs.otago.ac.nz}
+
+
+\address[uk]{Department of Computer Science, University of Hull, UK}
+\address[nz]{Department of Computer Science, University of Otago, New Zealand}
+%\fntext[myfootnote]{Since 1880.}
+
+%% or include affiliations in footnotes:
+%\author[mymainaddress,mysecondaryaddress]{Elsevier Inc}
+%\ead[url]{www.elsevier.com}
+
+%\author[mysecondaryaddress]{Global Customer Service     \corref{mycorrespondingauthor}}
+\cortext[mycorrespondingauthor]{Corresponding author. Tel: +447405024667}
+%\ead{s.kabir@2012.hull.ac.uk}
+%\address[mymainaddress]{1600 John F Kennedy Boulevard, Philadelphia}
+%\address[mysecondaryaddress]{360 Park Avenue South, New York}
+
+\begin{abstract}
+Contour representation of binary object is increasingly used in image processing and pattern recognition. Chain code and crack code are efficient and widely used methods for representing rasterised binary objects and contours. However, by using these methods, an accurate estimate of geometric features like area and perimeter of objects are difficult to obtain. Mid-crack code, a third contour encoding method, has higher accuracy in estimating the geometric features of objects. Each element in the
+mid-crack code represents the relative angle difference between the mid-point of the edges of two adjacent pixels along the boundary of an object with a 3-bit code. Therefore, the frequencies of moves in different directions are not considered and binary bits that represent the codes are treated equally. A power efficient encoding of mid-crack code is possible by considering and applying a variable-length encoding technique that treats the binary bits differently considering their energy consumption requirements. In this paper, a low power mid-crack code is proposed based on a variation of the Huffman code. Experiments performed on different images yield that the proposed representation reduces the overall transmission cost of encoded objects considerably with compared to classical
+mid-crack code.
+\end{abstract}
+
+\begin{keyword}
+Mid-crack code\sep Pattern Recognition\sep  Huffman Code\sep Image Compression\sep Image Transmission
+%\texttt{elsarticle.cls}\sep \LaTeX\sep Elsevier \sep template
+%\MSC[2010] 00-01\sep  99-00
+\end{keyword}
+
+\end{frontmatter}
+
+\linenumbers
+
+\section{Introduction}
+  
+
+
+
+\section{Background Study}
+\label{sec2}
+\subsection{Mid-Crack Code}
+\subsection{Huffman Code}
+
+\subsection{Source of Power Dissipation in Digital Transmission and its Effects on Information Encoding}
+     
+\subsection{Unequal Bit Cost Encoding}
+
+
+   
+\section{Proposed Scheme}
+\label{sec3}
+\subsection{Power Efficient Huffman Code}
+\subsection{Low Power Mid-crack Code}
+
+
+
+\section{Results and Discussion}
+\label{sec4}
+
+
+\section{Conclusion}
+\label{sec5}
+        
+\section*{References}
+
+\bibliography{mybibfile}
+
+\end{document}
