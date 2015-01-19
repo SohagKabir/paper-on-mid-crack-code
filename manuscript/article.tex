@@ -1,6 +1,8 @@
 \documentclass[preprint]{elsarticle} %review
 
 \usepackage{lineno,hyperref}
+\usepackage{amsmath} % assumes amsmath package installed
+\usepackage{amssymb}  % assumes amsmath package installed
 \modulolinenumbers[5]
 \usepackage{graphics}
 \graphicspath{{.}{images/}}
@@ -93,8 +95,16 @@ Mid-crack code\sep Pattern Recognition\sep  Huffman Code\sep Image Compression\s
 \subsection{Mid-Crack Code}
 \subsection{Huffman Code}
 
-\subsection{Source of Power Dissipation in Digital Transmission and its Effects on Information Encoding}
-     
+\subsection{Source of Power Dissipation and its Effects on Information Encoding}
+In the recent years, application of battery-powered portable devices, e.g. laptop computers and mobile phones has increased rapidly. Power dissipation has become a primary concern for digital community because it affects the performance,reliability, and the cost of computation         in both portable and non-portable devices. CMOS technologies were developed in order to reduce the power consumption in devices. Digital CMOS circuits have three major sources of power dissipation and are summarised in the following equation \cite{Weste88}:
+\begin{equation}
+\begin{split}
+    P_{avg} ={}& P_{dynamic}+P_{short-circuit}+P_{leakage}\\
+         ={}& \alpha_{0 \rightarrow 1}\cdot C_L\cdot V_{dd}^2\cdot f_{clk} + I_{sc}\cdot V_{dd}+I_{leakage}\cdot V_{dd}
+\end{split}
+\end{equation}
+
+
 \subsection{Unequal Bit Cost Encoding}
 
 
